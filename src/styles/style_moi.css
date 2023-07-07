@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+@font-face {
+  src: url("../fonts/newake.woff2") format("woff2");
+  font-family: "Newake";
+  font-weight: 400;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --jaune: #E3E3CD;
+  --noir: #292828;
+  --spacing: .05rem;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: var(--jaune);
+  overflow-x: hidden;
+}
+
+header {
+  padding-top: 7.1rem;
+  width: calc(100vw - 5rem*2);
+  margin: auto;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+header nav .logo {
+  width: 5rem;
+  height: auto;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 8rem;
+}
+
+header nav ul a {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  color: var(--noir);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.qui_suis_je {
+  margin: 24.4rem 5vw 0 5vw;
+}
+
+.qui_suis_je h2 {
+  font-family: 'Newake', sans-serif;
+  font-size: 8rem;
+  font-weight: 400;
+  letter-spacing: var(--spacing);
+  color: var(--noir);
+  text-transform: uppercase;
+}
+
+.qui_suis_je .p1_qui_suis_je {
+  margin-top: 5rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--noir);
+  width: 90.4rem;
+}
+
+.qui_suis_je .image_container {
+  height: 108.6rem;
+  width: auto;
+  position: relative;
+  z-index: 0;
+}
+
+.qui_suis_je .image_container img {
+  height: 100%;
+  width: auto;
+}
+
+.qui_suis_je .p2_qui_suis_je {
+  width: 63.4rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--noir);
+  position: absolute;
+  top: 106.2rem;
+  right: 7.5rem;
+  z-index: 1;
+}
+
+.qui_suis_je .capable {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 25.3rem;
+  row-gap: 7.3rem;
+}
+
+.qui_suis_je .capable h2 {
+  font-family: 'Newake', sans-serif;
+  font-size: 8rem;
+  font-weight: 400;
+  letter-spacing: var(--spacing);
+  color: var(--noir);
+  text-transform: uppercase;
+}
+
+.qui_suis_je .capable p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--noir);
+}
+
+.qui_suis_je .row_img {
+  margin-top: 9.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-column-gap: 5.7rem;
+          column-gap: 5.7rem;
+}
+
+.bio {
+  margin-top: 50rem;
+  height: 443.1rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bio .rect {
+  min-width: 100vw;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: 0;
+}
+
+.bio .parcours {
+  font-family: 'Newake', sans-serif;
+  font-size: 8rem;
+  font-weight: 400;
+  letter-spacing: var(--spacing);
+  color: var(--jaune);
+  text-transform: uppercase;
+  position: absolute;
+  top: 167.2rem;
+}
+
+.bio .tree {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
+.bio .wrapper_items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 12.5rem;
+  position: absolute;
+  z-index: 1;
+  top: 230.4rem;
+  max-width: 106.4rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bio .wrapper_items .wrapped_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.bio .wrapper_items .wrapped_item .parcours_item h4 {
+  font-family: 'Newake', sans-serif;
+  font-size: 3.725rem;
+  margin-bottom: 1.4rem;
+  font-weight: 400;
+  letter-spacing: var(--spacing);
+  color: var(--jaune);
+}
+
+.bio .wrapper_items .wrapped_item .parcours_item .p1_parcours {
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  color: var(--jaune);
+  margin-bottom: 1.4rem;
+}
+
+.bio .wrapper_items .wrapped_item .parcours_item .p2_parcours {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--jaune);
+}
+
+.bio .wrapper_items .wrapped_item .parcours_item.bacsi {
+  top: 219rem;
+  left: 91.3rem;
+}
+
+.bio .wrapper_items .wrapped_item .parcours_item.dutinfo {
+  top: 269.6rem;
+  left: 33.3rem;
+}
+
+.bio .wrapper_items .wrapped_item .parcours_item.dutmmi {
+  top: 301.9rem;
+  left: 91.3rem;
+}
+
+.bio .wrapper_items .wrapped_item .parcours_item.ostmicro {
+  top: 348.1rem;
+  left: 33.3rem;
+}
+
+.bio .wrapper_items .wrapped_item .parcours_item.mdsparis {
+  top: 396.2rem;
+  left: 93.3rem;
+}
+
+.bio .wrapper_items .wrapped_item:nth-child(1) {
+  gap: 59rem;
+}
+
+.bio .wrapper_items .wrapped_item:nth-child(2) {
+  gap: 70.4rem;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 20.9rem 5vw 0 5vw;
+}
+
+footer p {
+  font-family: 'Newake', sans-serif;
+  font-size: 2rem;
+  color: var(--noir);
+  letter-spacing: var(--spacing);
+}
+
+footer .gros_bouton {
+  margin-top: 2.6rem;
+  height: 46.3rem;
+  border: solid var(--noir) 1px;
+  border-radius: 102px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+footer .gros_bouton p {
+  font-size: 10rem;
+  text-transform: uppercase;
+}
+
+footer .etletour {
+  margin-top: 2.6rem;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+footer h4 {
+  margin-top: 15.2rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-weight: 500;
+  margin-bottom: 5.4rem;
+}
+/*# sourceMappingURL=style_moi.css.map */

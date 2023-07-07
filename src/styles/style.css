@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+@font-face {
+  src: url("../fonts/newake.woff2") format("woff2");
+  font-family: "Newake";
+  font-weight: 400;
+}
+
+* {
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --jaune: #E3E3CD;
+  --noir: #292828;
+  --spacing: .05rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html.lenis {
+  height: auto !important;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: auto !important;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden !important;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none !important;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: var(--jaune);
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+.canvas_wrapper {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.webgl {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -2;
+  top: 0;
+  left: 0;
+}
+
+header {
+  padding-top: 7.1rem;
+  width: calc(100vw - 5rem*2);
+  margin: auto;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+header nav .logo {
+  width: 5rem;
+  height: auto;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 8rem;
+}
+
+header nav ul a {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  color: var(--noir);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 25rem;
+}
+
+.title div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: .5rem;
+}
+
+.title div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: .7rem;
+}
+
+.title div div h1 {
+  font-family: "Newake", sans-serif;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12rem;
+  color: var(--noir);
+  letter-spacing: .3rem;
+}
+
+.title div div p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.title div .souris {
+  width: 5rem;
+  height: auto;
+  margin: 5.5rem auto 0 auto;
+}
+
+.projets {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[6];
+      grid-template-rows: repeat(6, 1fr);
+  gap: 50rem;
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
+  margin-top: 50rem;
+}
+
+.projets .projet img {
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  opacity: 0;
+}
+
+.projets .projet h2 {
+  font-family: "Newake", sans-serif;
+  font-size: 5rem;
+  color: var(--noir);
+  letter-spacing: var(--spacing);
+}
+
+.projets .projet ul {
+  padding: 0;
+}
+
+.projets .projet ul li {
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.projets .item__1 {
+  width: 100vw;
+  padding: 0 15vw;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.projets .item__2 {
+  width: 100vw;
+  padding: 0 15vw;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+.projets .item__3 {
+  width: 100vw;
+  padding: 0 15vw;
+  -ms-grid-row: 3;
+  grid-row: 3;
+}
+
+.projets .item__4 {
+  width: 100vw;
+  padding: 0 15vw;
+  -ms-grid-row: 4;
+  grid-row: 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+.projets .item__5 {
+  width: 100vw;
+  padding: 0 15vw;
+  -ms-grid-row: 5;
+  grid-row: 5;
+}
+
+.projets .item__6 {
+  width: 100vw;
+  padding: 0 15vw;
+  -ms-grid-row: 6;
+  grid-row: 6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 60rem 5vw 0 5vw;
+}
+
+footer h3 {
+  font-family: 'Newake', sans-serif;
+  font-size: 7rem;
+  color: var(--noir);
+  letter-spacing: var(--spacing);
+  margin-bottom: 14.7rem;
+  font-weight: 400;
+}
+
+footer p {
+  font-family: 'Newake', sans-serif;
+  font-size: 2rem;
+  color: var(--noir);
+  letter-spacing: var(--spacing);
+}
+
+footer .gros_bouton {
+  margin-top: 2.6rem;
+  height: 46.3rem;
+  border: solid var(--noir) 1px;
+  border-radius: 102px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+footer .gros_bouton p {
+  font-size: 10rem;
+  text-transform: uppercase;
+}
+
+footer .etletour {
+  margin-top: 2.6rem;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+footer h4 {
+  margin-top: 15.2rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-weight: 500;
+  margin-bottom: 5.4rem;
+}
+/*# sourceMappingURL=style.css.map */
